@@ -1,5 +1,3 @@
-//immediate invoked function expression
-(function() {
   const quotes = [
     {
       quote:
@@ -31,5 +29,3 @@
       author: " Tyne Daly"
     }
   ];
-
-})();
