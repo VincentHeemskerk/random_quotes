@@ -1,3 +1,4 @@
+(() => {
   const quotes = [
     {
       quote:
@@ -29,3 +30,9 @@
       author: " Tyne Daly"
     }
   ];
+  document.querySelector('#generate-btn').addEventListener('click', function() {
+    let num = Math.floor(Math.random() * quotes.length);
+    document.querySelector('#quote').innerHTML = quotes[num].quote;
+    document.querySelector('.quote-author').innerHTML = quotes[num].author;
+  });
+})();
